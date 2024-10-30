@@ -36,10 +36,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.buttonExecuteQuery = new System.Windows.Forms.Button();
-            this.buttonReadData = new System.Windows.Forms.Button();
-            this.buttonUpdateData = new System.Windows.Forms.Button();
-            this.buttonDeleteData = new System.Windows.Forms.Button();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -81,6 +79,7 @@
             // 
             // textBoxQuery
             // 
+            this.textBoxQuery.AcceptsReturn = true;
             this.textBoxQuery.Location = new System.Drawing.Point(12, 131);
             this.textBoxQuery.Multiline = true;
             this.textBoxQuery.Name = "textBoxQuery";
@@ -115,55 +114,30 @@
             this.dataGridView1.Size = new System.Drawing.Size(1007, 496);
             this.dataGridView1.TabIndex = 7;
             // 
-            // buttonExecuteQuery
+            // comboBox2
             // 
-            this.buttonExecuteQuery.Location = new System.Drawing.Point(1038, 187);
-            this.buttonExecuteQuery.Name = "buttonExecuteQuery";
-            this.buttonExecuteQuery.Size = new System.Drawing.Size(200, 23);
-            this.buttonExecuteQuery.TabIndex = 8;
-            this.buttonExecuteQuery.Text = "ExecuteQuery";
-            this.buttonExecuteQuery.UseVisualStyleBackColor = true;
-            this.buttonExecuteQuery.Click += new System.EventHandler(this.buttonExecuteQuery_Click);
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(1025, 171);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(213, 21);
+            this.comboBox2.TabIndex = 12;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
-            // buttonReadData
+            // textBox1
             // 
-            this.buttonReadData.Location = new System.Drawing.Point(1038, 216);
-            this.buttonReadData.Name = "buttonReadData";
-            this.buttonReadData.Size = new System.Drawing.Size(200, 23);
-            this.buttonReadData.TabIndex = 9;
-            this.buttonReadData.Text = "ReadData";
-            this.buttonReadData.UseVisualStyleBackColor = true;
-            this.buttonReadData.Click += new System.EventHandler(this.buttonReadData_Click);
-            // 
-            // buttonUpdateData
-            // 
-            this.buttonUpdateData.Location = new System.Drawing.Point(1038, 246);
-            this.buttonUpdateData.Name = "buttonUpdateData";
-            this.buttonUpdateData.Size = new System.Drawing.Size(200, 23);
-            this.buttonUpdateData.TabIndex = 10;
-            this.buttonUpdateData.Text = "UpdateData";
-            this.buttonUpdateData.UseVisualStyleBackColor = true;
-            this.buttonUpdateData.Click += new System.EventHandler(this.buttonUpdateData_Click);
-            // 
-            // buttonDeleteData
-            // 
-            this.buttonDeleteData.Location = new System.Drawing.Point(1038, 275);
-            this.buttonDeleteData.Name = "buttonDeleteData";
-            this.buttonDeleteData.Size = new System.Drawing.Size(200, 23);
-            this.buttonDeleteData.TabIndex = 11;
-            this.buttonDeleteData.Text = "DeleteData";
-            this.buttonDeleteData.UseVisualStyleBackColor = true;
-            this.buttonDeleteData.Click += new System.EventHandler(this.buttonDeleteData_Click);
+            this.textBox1.Location = new System.Drawing.Point(1025, 198);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(213, 105);
+            this.textBox1.TabIndex = 13;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1250, 679);
-            this.Controls.Add(this.buttonDeleteData);
-            this.Controls.Add(this.buttonUpdateData);
-            this.Controls.Add(this.buttonReadData);
-            this.Controls.Add(this.buttonExecuteQuery);
+            this.ClientSize = new System.Drawing.Size(1246, 679);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label2);
@@ -190,10 +164,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button buttonExecuteQuery;
-        private System.Windows.Forms.Button buttonReadData;
-        private System.Windows.Forms.Button buttonUpdateData;
-        private System.Windows.Forms.Button buttonDeleteData;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
